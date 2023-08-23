@@ -1,0 +1,5 @@
+@app.route('/card/<int:productId>/number', methods=['GET'])
+def generate_card_number(productId):
+    # Código para generar el número de tarjeta
+    card_number = generate_card_number_function(productId)
+    return jsonify({'cardNumber': card_number})

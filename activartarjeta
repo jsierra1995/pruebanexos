@@ -1,0 +1,6 @@
+@app.route('/card/enroll', methods=['POST'])
+def activate_card():
+    data = request.get_json()
+    card_id = data.get('cardId')
+    # Código para activar la tarjeta en la base de datos
+    return jsonify({'message': 'Tarjeta activada correctamente'})

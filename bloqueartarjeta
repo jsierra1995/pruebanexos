@@ -1,0 +1,4 @@
+@app.route('/card/<string:cardId>', methods=['DELETE'])
+def block_card(cardId):
+    # Código para bloquear la tarjeta en la base de datos
+    return jsonify({'message': 'Tarjeta bloqueada correctamente'})

@@ -1,0 +1,7 @@
+@app.route('/transaction/anulation', methods=['POST'])
+def cancel_transaction():
+    data = request.get_json()
+    card_id = data.get('cardId')
+    transaction_id = data.get('transactionId')
+    # Código para anular la transacción y restaurar el saldo
+    return jsonify({'message': 'Transaction cancelada'})

@@ -1,0 +1,4 @@
+@app.route('/transaction/<string:transactionId>', methods=['GET'])
+def get_transaction(transactionId):
+    # Código para obtener los detalles de la transacción desde la base de datos
+    return jsonify({'transactionDetails': transaction_details})

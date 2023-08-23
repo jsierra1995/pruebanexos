@@ -1,0 +1,7 @@
+@app.route('/transaction/purchase', methods=['POST'])
+def make_purchase():
+    data = request.get_json()
+    card_id = data.get('cardId')
+    price = data.get('price')
+    # Código para procesar la transacción de compra
+    return jsonify({'message': 'Pago successful'})
