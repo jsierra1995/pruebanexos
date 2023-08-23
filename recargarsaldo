@@ -1,0 +1,7 @@
+@app.route('/card/balance', methods=['POST'])
+def recharge_balance():
+    data = request.get_json()
+    card_id = data.get('cardId')
+    balance = data.get('balance')
+    # Código para recargar el saldo en la base de datos
+    return jsonify({'message': 'Balance recargado correctamente'})
